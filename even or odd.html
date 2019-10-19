@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfect Square</title>
+</head>
+<body>
+	<input type="number" id="N">
+	<button onclick="square()">Check</button>
+	<p id="demo"> </p>
+</body>
+<script type="text/javascript">
+
+
+   function square() {
+	 var  m = document.getElementById("N").value;
+     var eo=  ( m & 1 ) ? "odd" : "even";
+     document.getElementById("demo").innerHTML = eo;
+   }    
+  
+
+
+
+</script>
+</html>

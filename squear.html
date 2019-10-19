@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfect Square</title>
+</head>
+<body>
+	<input type="number" id="N">
+	<button onclick="square()">Check</button>
+
+	<script type="text/javascript">
+	function square(){
+		var rem, sum=0, i;
+		var number=Number(document.getElementById("N").value);
+		for (i=1; i<=(number-1); i++){
+			rem=number%i;
+			if (rem==0){
+				sum=sum+i;
+			}
+		}
+		if (sum==number){
+			alert("Entered Number Is Perfect Square Number");
+		}
+		else {
+			alert("Entered Number Is Not a Perfect Square Number");
+		}
+	}
+
+	</script>
+
+
+</body>
+
+</html>
